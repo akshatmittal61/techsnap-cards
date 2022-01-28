@@ -825,8 +825,126 @@ button:hover, button:active, button:focus, button:focus-visible, button:focus-wi
   width: 100%;
   min-height: 30vh;
 }
-.main > *:not(:last-child) {
-  border-bottom: 5px solid var(--back-shadow);
+
+.main-head {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-head-title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.main-head-ip select {
+  width: 7.5rem;
+}
+.main-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.main-body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.main-body-container__head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.main-body-container__body {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.content-box {
+  width: 23vw;
+  margin: 0 auto;
+}
+
+.card {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column;
+  background-color: var(--indigo);
+  color: #f0f0f0;
+  border-radius: 5px;
+  margin: 1rem auto;
+}
+.card > * {
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+.card-title {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+.card-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.card-pricing {
+  display: flex;
+}
+.card-pricing span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.875rem;
+  margin: 0 0.25rem;
+}
+.card-pricing span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.card-pricing span:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card-btn {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card button {
+  width: 100%;
+  color: #ffffff;
+}
+.card button, .card button:hover {
+  background-color: var(--primary-400);
+}
+
+.list {
+  margin: 1rem 0;
+  padding: 0 10%;
+  list-style: none;
+}
+.list li {
+  padding: 0.5rem 0;
+}
+.list li::marker {
+  content: " > ";
+  font-weight: 700;
 }
 
 ::-webkit-scrollbar {
