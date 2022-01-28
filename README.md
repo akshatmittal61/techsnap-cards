@@ -1,3 +1,3 @@
 # Techsnap
 
-A simple contribute page design for Techsnap
+A simple cards design for Techsnap
